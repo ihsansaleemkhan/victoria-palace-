@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('backend.dashboard');
+});
+
+Route::get('/admin', function () {
+    return view('backend.dashboard');
 });
 
 Auth::routes();
